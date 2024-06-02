@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light Gray */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/6261277.jpg'); /* Correct path to the background image */
+}
+.container {
+    background-color: #FFFFFF; /* White for form background */
+    padding: 50px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #8BC34A; /* Soft Green for primary color */
+}
+
+label {
+    margin-bottom: 8px;
+    color: #757575; /* Dark Gray for text */
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #e5e5e5;
+    background: #FFFFFF; /* White background for input fields */
+    border-radius: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #8BC34A; /* Soft Green for primary actions */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 14px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #7CB342; /* Slightly darker green on hover */
+}

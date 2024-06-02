@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray */
+    color: #757575; /* Dark gray */
+}
+
+.profile-icon {
+    padding-left: 10px; /* Adjust as needed */
+}
+
+.profile-icon-img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid #fff; /* Add border */
+}
+
+.profile-icon-img:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transition: background-color 0.3s ease; 
+}
+
+.bmi-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bmi-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: white; /* White text */
+    width: 100%;
+}
+
+.footer .list-inline-item a {
+    color: #17A2B8; /* Cyan for links */
+    text-decoration: none;
+}
+
+.footer .list-inline-item a:hover {
+    color: #138496; /* Darker cyan on hover */
+    text-decoration: underline;
+}
+
+/* Ensure the footer is at the bottom of the page */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}

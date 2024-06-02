@@ -1,0 +1,43 @@
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Profile Info */
+.profile-info {
+    background-color: #F5F5F5; /* Light Gray */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+.profile-item label {
+    font-weight: bold;
+}
+
+.profile-item span {
+    margin-left: 10px;
+}
+
+/* Edit Button */
+button {
+    background-color: #17A2B8; /* Light Blue */
+    color: #fff; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #138496; /* Darker shade of Blue */
+}

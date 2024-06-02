@@ -1,0 +1,108 @@
+body {
+  background-color: #93ba66;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.b {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contact-form,
+.contact-info {
+  padding: 20px;
+  border-radius: 20px;
+  background-color:whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #17A2B8;
+}
+
+/* .contact-form:hover,
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.map-container {
+  grid-column: 1 / span 2;
+  height: 300px; /* Adjust the height as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #17A2B8;
+}
+
+.contact-info p i {
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* Adjust width to fit within the grid */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: none;
+}
+
+input[type="submit"] {
+  background-color: #17A2B8;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color:#1cadc3;
+
+.icon-green {
+  color: #4caf50;
+}
+}
+
+/* Profile Icon */
+.profile-icon {
+  padding-left: 10px; /* Adjust as needed */
+}
+
+.profile-icon-img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  border-radius: 50%; /* Make it circular */
+  border: 1px solid #fff; /* Add border */
+}
+
+/* Profile Icon Hover Effect */
+.profile-icon-img:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Add a background color on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}

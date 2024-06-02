@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: #AED580; /* Lighter green */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color:#30AA4C; /* Darker green for headings */
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#about {
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 90%;
+    height: 500px;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    width: 60%;
+}
+
+/* Profile Icon */
+.profile-icon {
+    padding-left: 10px; /* Adjust as needed */
+}
+
+.profile-icon-img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid #fff; /* Add border */
+}
+
+/* Profile Icon Hover Effect */
+.profile-icon-img:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add a background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}

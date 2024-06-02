@@ -1,0 +1,91 @@
+
+body{
+    overflow-x: hidden;
+}
+.hero-section {
+    background: url('hero.jpg') center center/cover no-repeat;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(23,162,184,0.7);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Informational Blocks */
+.informational-blocks .info-block {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.informational-blocks .info-block h3 {
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonials .testimonial {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+/* Disease Blocks Hover Effect */
+.informational-blocks .info-block:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Testimonial Hover Effect */
+.testimonials .testimonial:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Profile Icon */
+.profile-icon {
+    padding-left: 10px; /* Adjust as needed */
+}
+
+.profile-icon-img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid #fff; /* Add border */
+}
+
+/* Profile Icon Hover Effect */
+.profile-icon-img:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add a background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Footer */
+.footer {
+    background-color: #424242; /* Dark Gray */
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer a {
+    color: #8BC34A; /* Soft Green for links */
+}
+
+.footer a:hover {
+    color: #03A9F4; /* Light Blue on hover */
+}
