@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css"> <!-- Correct path to the public folder -->
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="POST">
+            <h2>Nutribud Login</h2>
+            <label for="email">EMAIL ID</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="acc" style="color: #757575; text-align: center;">Not an User? <a style="color: #17A2B8;" href="/signup">Signup here</a></p>
+    </div>
+</body>
+</html>

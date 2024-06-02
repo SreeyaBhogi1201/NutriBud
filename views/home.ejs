@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NutriBud</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/signup">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="/BMI">BMI Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="/aboutus">About Us</a></li>
+                <li class="nav-item profile-icon"><a class="nav-link" href="profile"><img src="profile.jpeg" alt="Profile" class="profile-icon-img"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 text-white">Welcome to NutriBud</h1>
+            <p class="lead text-white">Personalized diet plans for a healthier life.</p>
+            <a href="/filter" class="btn btn-warning">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Disease-Specific Diet Plans -->
+    <section class="informational-blocks py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="info-block bg-light p-4">
+                        <h3 class="text-info">Diabetes</h3>
+                        <p>Maintain a balanced diet with our specialized meal plans for diabetes.</p>
+                        <a href="#" class="text-warning">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-block bg-white p-4">
+                        <h3 class="text-success">Hypertension</h3>
+                        <p>Control your blood pressure with our heart-healthy diet plans.</p>
+                        <a href="#" class="text-warning">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-block bg-light p-4">
+                        <h3 class="text-info">Celiac Disease</h3>
+                        <p>Explore gluten-free diet options suitable for celiac disease.</p>
+                        <a href="#" class="text-warning">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="info-block bg-white p-4">
+                        <h3 class="text-success">Obesity</h3>
+                        <p>Achieve your weight goals with our nutritious diet plans.</p>
+                        <a href="#" class="text-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-calculator" class="section">
+        <div class="container">
+            <h2 style="color:#17A2B8;">BMI Calculator</h2>
+            <form id="bmiForm">
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" class="form-control" required>
+                </div>
+                <button type="button" onclick="calculateBMI()" class="btn btn-info">Calculate BMI</button>
+            </form>
+            <div id="result" class="mt-4">
+                <h3>Your BMI: <span id="bmiValue"></span></h3>
+                <p id="bmiCategory"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-info mb-5">What Our Users Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p class="text-dark">"The diet plans have helped me manage my diabetes effectively!"</p>
+                        <p class="text-info">- User A</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p class="text-dark">"Thanks to the personalized plans, my blood pressure is under control."</p>
+                        <p class="text-info">- User B</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4">
+                        <p class="text-dark">"The gluten-free options are amazing for my celiac disease."</p>
+                        <p class="text-info">- User C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <p>&copy; 2024 Diet Planner. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-success">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-success">About Us</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-success">Contact Us</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-success">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-success">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>    
+
+    <!-- JavaScript -->
+   
+    <script src="../JS/bmi.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
